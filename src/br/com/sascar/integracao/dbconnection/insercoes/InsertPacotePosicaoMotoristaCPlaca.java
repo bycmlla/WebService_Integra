@@ -23,10 +23,10 @@ public class InsertPacotePosicaoMotoristaCPlaca {
         SasIntegraWSService service = new SasIntegraWSService();
         SasIntegraWS port = service.getSasIntegraWSPort();
 
-        String usuario = "GRIFFIRODOPAR";
-        String senha = "sascar";
+        String usuario = "seu usuário";
+        String senha = "sua senha";
         int quantidade = 2000;
-        String dbURL = "jdbc:sqlserver://SERVERBD\\SQLBDSASCAR;databaseName=db_sascar;integratedSecurity=true;encrypt=false;";
+        String dbURL = "jdbc:sqlserver://seuservidor\\suainstancia;databaseName=db_sascar;integratedSecurity=true;encrypt=false;";
 
         while (true) {
             try (Connection conn = DriverManager.getConnection(dbURL)) {

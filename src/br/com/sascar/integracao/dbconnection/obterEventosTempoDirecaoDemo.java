@@ -14,8 +14,8 @@ public class obterEventosTempoDirecaoDemo {
         SasIntegraWSService service = new SasIntegraWSService();
         SasIntegraWS port = service.getSasIntegraWSPort();
         
-        String usuario = "GRIFFIRODOPAR";
-        String senha = "sascar";
+        String usuario = "seu usuário";
+        String senha = "sua senha";
         int quantidade = 2000;
         Integer idMotorista = null; 
         String dataInicio = "2024-07-01 00:00:00"; 

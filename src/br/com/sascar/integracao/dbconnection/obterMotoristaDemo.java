@@ -20,8 +20,8 @@ public class obterMotoristaDemo {
         SasIntegraWSService service = new SasIntegraWSService();
         SasIntegraWS port = service.getSasIntegraWSPort();
 
-        String usuario = "GRIFFIRODOPAR";
-        String senha = "sascar";
+        String usuario = "seu usuário";
+        String senha = "sua senha";
         int quantidade = 2000;
         Integer idMotorista = null;
 
@@ -48,7 +48,6 @@ public class obterMotoristaDemo {
                             Calendar dataContratacao = Calendar.getInstance();
                             dataContratacao.setTime(sdfInput.parse(dataContratacaoStr));
 
-                            // Formata a data para exibição
                             String dataFormatada = sdfOutput.format(dataContratacao.getTime());
                             System.out.println("Data de contratação: " + dataFormatada);
                         } catch (Exception e) {

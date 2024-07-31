@@ -16,15 +16,14 @@ public class obterVeiculoInfo {
         SasIntegraWSService service = new SasIntegraWSService();
         SasIntegraWS port = service.getSasIntegraWSPort();
 
-        String usuario = "GRIFFIRODOPAR";
-        String senha = "sascar";
+        String usuario = "seu usuário";
+        String senha = "sua senha";
         int quantidade = 1000;
 
         try {
             List<Veiculo> veiculoList = port.obterVeiculos(usuario, senha, quantidade, null);
             
             if (veiculoList != null && !veiculoList.isEmpty()) {
-                // Iterar pela lista e imprimir os detalhes de cada veículo
                 for (Veiculo veiculo : veiculoList) {
                     System.out.println("ID do Veículo: " + veiculo.getIdVeiculo());
                     System.out.println("Placa: " + veiculo.getPlaca());
